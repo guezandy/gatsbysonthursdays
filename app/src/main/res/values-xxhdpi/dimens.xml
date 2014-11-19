@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_font">28sp</dimen>
+    <dimen name="body_font">18sp</dimen>
+    <dimen name="margin_fields_gap">15dp</dimen>
+    <dimen name="verticale_padding">25dp</dimen>
+    <dimen name="bigfont">55sp</dimen>
+
+    <item name="smilly_weight" format="float" type="dimen">.250</item>
+
+</resources>

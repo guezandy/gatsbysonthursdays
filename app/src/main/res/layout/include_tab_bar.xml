@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btn_account"
+        style="@style/button_tab_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/tab_icon_over"
+        android:background="@drawable/tab_account_icon" />
+
+    <ImageButton
+        android:id="@+id/btn_locate_me"
+        style="@style/button_tab_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/tab_location_me_icon" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        style="@style/button_tab_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/tab_about_icon" />
+
+</LinearLayout>

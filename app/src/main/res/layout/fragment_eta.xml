@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/detailLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="0.055" > -->
+        <!-- </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_fields_gap" >
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_fields_gap"
+                android:layout_marginTop="@dimen/margin_fields_gap"
+                android:background="@drawable/button_background"
+                android:text="@string/text_mapview"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_fields_gap"
+                android:layout_marginTop="@dimen/margin_fields_gap"
+                android:background="@drawable/button_background"
+                android:text="@string/text_detailview"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/driverName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/title_font"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/timeLLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txtHourOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtHourTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtHourOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtMinOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtMinTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtHourOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtSecOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/txtSecTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/blue"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/driverContact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/title_font"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_fields_gap" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_eta_time" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="@string/waiting_for_driver" -->
+            <!-- android:textColor="@android:color/white" -->
+            <!-- android:textSize="18sp" -->
+            <!-- android:visibility="gone" /> -->
+
+            <com.appdupe.uberforxserviceseeker.helper.TextViewCirco
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_fields_gap"
+                android:layout_marginTop="@dimen/margin_fields_gap"
+                android:gravity="center"
+                android:text="@string/waiting_for_x_Service_Provider"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/body_font" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_call_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_fields_gap"
+                    android:background="@drawable/button_background"
+                    android:text="@string/call_x_Service_Provider"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_call_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_fields_gap"
+                    android:background="@drawable/button_background"
+                    android:text="@string/call_operator"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_fields_gap"
+            android:background="@drawable/ref_id_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp" >
+
+            <TextView
+                android:id="@+id/tv_ref"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:drawableLeft="@drawable/people"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="@string/text_ref"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/body_font" />
+
+            <TextView
+                android:id="@+id/tv_refno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_fields_gap" >
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_fields_gap"
+                android:layout_marginTop="@dimen/margin_fields_gap"
+                android:background="@drawable/button_background"
+                android:text="@string/text_mapview"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_fields_gap"
+                android:layout_marginTop="@dimen/margin_fields_gap"
+                android:background="@drawable/button_background"
+                android:text="@string/text_detailview"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/mapLocate"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

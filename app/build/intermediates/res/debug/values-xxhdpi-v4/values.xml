@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Owner/Desktop/UberAlfaFree/app/src/main/res/values-xxhdpi/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bigfont">55sp</dimen>
+    <dimen name="body_font">18sp</dimen>
+    <dimen name="margin_fields_gap">15dp</dimen>
+
+    <item name="smilly_weight" format="float" type="dimen">.250</item>
+
+    <dimen name="title_font">28sp</dimen>
+    <dimen name="verticale_padding">25dp</dimen>
+
+</resources>
